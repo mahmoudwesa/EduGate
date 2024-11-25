@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.login-section, .image-section {
+    font-family: 'Cambria', Georgia, serif;
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #1e1e2e, #2c2c3e);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.login-section:hover, .image-section:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.login-section {
+    width: 35%;
+    text-align: center;
+}
+
+.login-section h1 {
+    font-size: 2.8em; 
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.login-section h2 {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.login-section form input {
+    display: block;
+    width: 85%;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #1e1e2e;
+    color: #fff;
+    font-size: 1em;
+}
+
+.login-section form input:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.8);
+}
+
+.login-section form button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-section form button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 25px;
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.footer-logo img {
+    width: 80px;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.footer-logo img:hover {
+    filter: brightness(1);
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links div h3 {
+    margin-bottom: 12px;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.footer-links div a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-links div a:hover {
+    color: #fff;
+}
